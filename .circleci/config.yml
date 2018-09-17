@@ -18,6 +18,7 @@ jobs:
           command: docker push appliedblockchain/libsnark-env
 
 workflows:
+  version: 2
   main:
     jobs:
       - build:
