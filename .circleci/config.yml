@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
   build:
     docker:
@@ -15,3 +16,9 @@ jobs:
       - run:
           name: Push Docker image
           command: docker push appliedblockchain/libsnark-env
+
+workflows:
+  main:
+    jobs:
+      - build:
+          context: org-global
