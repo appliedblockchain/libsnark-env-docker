@@ -7,5 +7,5 @@ jobs:
       - checkout
       - run:
           name: Build docker image
-          command: docker build -t appliedblockchain/libsnark-env
+          command: docker build -t appliedblockchain/libsnark-env .
  
