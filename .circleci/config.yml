@@ -6,5 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Greeting
-          command: echo Hello, world.
+          name: Build docker image
+          command: docker build -t appliedblockchain/libsnark-env
+ 
