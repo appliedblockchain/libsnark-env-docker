@@ -7,6 +7,9 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Build docker image
+          name: Build Docker image
           command: docker build -t appliedblockchain/libsnark-env .
+      - run:
+          name: Push Docker image
+          command: docker push appliedblockchain/libsnark-env
  
