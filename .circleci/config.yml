@@ -5,6 +5,7 @@ jobs:
       - image: docker:18.06.1-ce
     steps:
       - checkout
+      - setup_remote_docker
       - run:
           name: Build docker image
           command: docker build -t appliedblockchain/libsnark-env .
